@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+  background: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.calculator {
+  background: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+  width: 320px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+.display {
+  grid-column: span 4;
+  height: 60px;
+  background: #252525;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 2rem;
+  padding: 10px 15px;
+  text-align: right;
+  user-select: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: auto;
+}
+
+.button {
+  background: #333;
+  border: none;
+  border-radius: 8px;
+  color: #eee;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.5);
+}
+
+.button:hover {
+  background: #444;
+}
+
+.button.operator {
+  background: #0066cc;
+}
+
+.button.operator:hover {
+  background: #0055aa;
+}
+
+.button.clear {
+  background: #cc0000;
+  font-weight: bold;
+}
+
+.button.clear:hover {
+  background: #dd1111;
+}
+
+.button.equal {
+  background: #009933;
+  grid-column: span 4;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button.equal:hover {
+  background: #00bb44;
+}
+
+.green-success {
+  background-color: #2e7d32 !important;
+  color: #d0f0c0 !important;
+}
+
+.red-success {
+  background-color: #b71c1c !important;
+  color: #f9bdbb !important;
+}
+
+.orange-success {
+  background-color: #ef6c00 !important;
+  color: #ffddb4 !important;
+}
+
+.yellow-success {
+  background-color: #f9a825 !important;
+  color: #fff9c4 !important;
+}
